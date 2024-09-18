@@ -1,0 +1,112 @@
+<html>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <link href="https://htmlku.com/kamumau/style.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <title>Permintaan Maaff dari Iky</title>
+  <meta name="ikyyy" content="buat Avriii">
+</head>
+<body>
+	
+   <div id="bodyblur">
+     <!-- Wallpaper / Background --><img src="background.jpg" id="wallpaper"/>
+   </div>
+  
+  <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/pandapanah.gif" id="stiker1"/>
+         <img src="https://feeldreams.github.io/cilukba.gif" id="stiker2"/>
+         <img src="https://feeldreams.github.io/smprt.gif" id="stiker3"/>
+         <img src="https://feeldreams.github.io/gumush.gif" id="stiker4"/>
+         <img src="https://feeldreams.github.io/" id="stiker5"/>
+  </div>
+
+   <div id='Content'>
+   	
+     <div id="suratin" onClick="memulai();audio.play();">
+       <!-- Surat --><img src="surat.jpeg"/>
+     </div>
+     <p id="ket">Sebelum mulai<br> Klik Suratnya ya sayang!</p>
+   
+     <div>
+      <!-- Foto Akhir -->
+      <img src="https://feeldreams.github.io/pusn.gif" id="fotoakhir" />
+      <img src="https://feeldreams.github.io/emawh.gif" id="fotoakhir2" />
+    </div>
+     <div><blockquote id='bq'>
+       <p id="kalimat"></p>
+       <p id="kalimatc"></p>
+     </blockquote></div>
+   
+     <!-- Tombol -->
+     <div id="Tombol">
+      <a id="By" onClick="fungsimau()">Mau</a>
+      <a id="Bn" onClick="btn='Bn';fungsibaru(btn)">ngakmau!</a>
+    </div>
+
+    <!-- Pesan Ditolak -->
+    <div class="sembunyi">
+      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
+      <span id="kataditolak">Harus Mau Olivvv 😝</span>
+    </div>
+     
+   </div>
+
+<script src="https://htmlku.com/kamumau/script.js"></script>
+
+<script type="text/javascript">
+       async function pertama(){
+         audio = new Audio('musik.mp3');
+         setTimeout(showDiv, 100);
+
+         // Menambahkan event listener untuk memutar ulang lagu saat selesai
+         audio.onended = function() {
+             audio.play(); // Memutar ulang ketika lagu selesai
+         };
+       } 
+       pertama();
+	
+       async function pesan(){
+            await swalst.fire({
+                title: 'Hallo olivvv sayanggg! 😍', 
+                imageUrl: '' + stiker1.src,
+                timer: 5000,  // Tampilkan selama 5 detik
+                timerProgressBar: true
+            });
+
+            await swalst.fire({
+                title: 'Aku emang tadi lagi capek<br> tapi klo tau olivv ngambek sama aku, bukan capek lagi aku tpi sedih 😭',
+                imageUrl: '' + stiker2.src,
+                timer: 10000,  // Tampilkan selama 10 detik
+                timerProgressBar: true
+            });
+
+            await swalst.fire({
+                title: 'Aku juga tau olivv klo lagi marah<br>ga suka di ganggu pngen sendiri, makanya aku buatin ini biar ga chat panjang lebar 🥺',
+                imageUrl: '' + stiker3.src,
+                timer: 10000,  // Tampilkan selama 10 detik
+                timerProgressBar: true
+            });
+
+            await swalst.fire({
+                title: 'Oh ya, Aku Mau Ngomong<br> Sesuatu Nih 😊',
+                imageUrl: '' + stiker4.src,
+                timer: 5000,  // Tampilkan selama 5 detik
+                timerProgressBar: true
+            });
+
+            katangetik = "<b class='usefont2'>Aku minta maaf yaa<br>aku udah buat kamu ngambek dan ga mood🙏<br>dimaafin? </b>";
+            katangetik2 = "<b class='usefont'>Makasii udah mau <br>maafin aku sayanggg 😆🙏<br><br>Janjii aku bakal terus berusaha jadi yang terbaik buat kamuu olivv, karna aku yakin selama aku niatnya baik dan usaha yang maksimal insya Allah kita di mudahkan kedepannya sayang✌️<br>LOVE YOU OLIVVVVV❤️</b>";
+
+            kataditerima = "<b class='usefont2'>Yeaayy! 😍</b>";
+
+            setTimeout(kpemb, 1000);
+        }
+</script>
+</body>
+</html>
